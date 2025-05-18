@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Jam Growth Strategy & 12-Month Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2D3748;
+            --secondary-color: #4A5568;
+            --accent-color: #4299E1;
+            --background-color: #F7FAFC;
+            --card-background: #FFFFFF;
+            --border-color: #E2E8F0;
+            --success-color: #48BB78;
+            --warning-color: #ECC94B;
+            --danger-color: #F56565;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--primary-color);
+            background: linear-gradient(120deg, #f7fafc 0%, #e3eafc 100%);
+            padding: 2.5rem 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.08), 0 1.5px 4px rgba(44, 62, 80, 0.04);
+            padding: 2.5rem 2rem 2rem 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .page-title {
+            font-size: 2.7rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 2.5rem 0 1.2rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 2px solid var(--accent-color);
+            background: linear-gradient(90deg, #e3eafc 0%, #f7fafc 100%);
+            border-radius: 6px;
+            padding-left: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin: 1.5rem 0 1rem;
+        }
+
+        p {
+            margin-bottom: 1.1rem;
+            color: var(--secondary-color);
+            font-size: 1.08rem;
+        }
+
+        ul {
+            padding-left: 2rem;
+        }
+
+        ul.bulleted-list {
+            list-style: none;
+            margin: 1.1rem 0 1.1rem 0;
+            padding-left: 2rem;
+        }
+
+        ul.bulleted-list li {
+            position: relative;
+            padding-left: 1.3rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.08rem;
+        }
+
+        ul.bulleted-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-size: 1.2em;
+            top: 0.1em;
+        }
+
+        /* Remove nested bullet points */
+        ul.bulleted-list ul.bulleted-list li::before {
+            content: "◦";
+            color: var(--secondary-color);
+            font-size: 1em;
+        }
+
+        .callout {
+            background: #f0f8ff;
+            border-left: 5px solid var(--accent-color);
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(66, 153, 225, 0.07);
+            padding: 1.2rem 1.5rem 1.2rem 1.2rem;
+            margin: 2rem 0 2rem 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 1.2rem;
+        }
+        .callout-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .callout .icon {
+            font-size: 1.7em;
+            margin: 0;
+        }
+        .callout-content {
+            flex: 1;
+        }
+        .callout h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0;
+            border-bottom: none;
+        }
+        .callout ul.bulleted-list {
+            margin: 0.2rem 0 0.2rem 0;
+            padding-left: 1.2rem;
+        }
+        .callout li {
+            margin-bottom: 0.15rem;
+            padding-left: 0.7rem;
+        }
+
+        .priority-high {
+            color: var(--success-color);
+            font-weight: 600;
+        }
+
+        .priority-medium {
+            color: var(--warning-color);
+            font-weight: 600;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        details {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background-color: var(--card-background);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        summary {
+            font-weight: 600;
+            cursor: pointer;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        summary:hover {
+            color: var(--accent-color);
+        }
+
+        hr {
+            border: none;
+            border-top: 1.5px solid var(--border-color);
+            margin: 2.5rem 0 2rem 0;
+        }
+
+        .highlight {
+            background-color: #FEF3C7;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        .indented {
+            padding-left: 1rem;
+        }
+
+        .image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1.2em 0 1.2em 0;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
+            border: 1.5px solid #e2e8f0;
+        }
+        .image-caption {
+            display: block;
+            text-align: center;
+            font-size: 0.97em;
+            color: #6B7280;
+            margin-top: 0.3em;
+            margin-bottom: 1.2em;
+            font-style: italic;
+        }
+
+        .quick-term {
+            background: #e6f9ed;
+            border-radius: 10px;
+            padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+            margin: 1.5rem 0;
+        }
+        .mid-term {
+            background: #e6f0fa;
+            border-radius: 10px;
+            padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+            margin: 1.5rem 0;
+        }
+        .long-term {
+            background: #fff9e6;
+            border-radius: 10px;
+            padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+            margin: 1.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem 0.5rem 1.5rem 0.5rem;
+            }
+            .page-title {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+                padding-left: 0.2rem;
+            }
+            h3 {
+                font-size: 1.1rem;
+            }
+            .callout {
+                padding: 1rem 0.5rem 1rem 0.7rem;
+            }
+            .image img {
+                border-radius: 7px;
+            }
+            .quick-term, .mid-term, .long-term {
+                padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article id="1f724d30-c444-8074-948c-fd44a47ae30d" class="page sans">
+            <header>
+                <h1 class="page-title">Crossword Jam Growth Strategy & 12-Month Plan</h1>
+                <p class="page-description"></p>
+            </header>
+            <div class="page-body">
+                <h2 id="1f724d30-c444-801c-ada0-d6070ff09b63" class=""><strong>Introduction & Objectives</strong></h2>
+                <p id="1f724d30-c444-808f-a161-daf9615ce1ea" class="">Crossword Jam by PlaySimple Games is a leading word puzzle game, facing strong competition from prominent titles such as <strong>Wordscapes</strong> (PeopleFun) and <strong>Words of Wonders (WoW)</strong> (Fugo Games). Our objective over the next 12 months is to <strong>grow revenue and market share</strong> by strategically leveraging <strong>User Acquisition, Retention, and Monetization</strong>, guided by competitor analysis and data-driven insights.</p>
+                <hr id="1f724d30-c444-80b5-bf8a-c791af0076ef"/>
+                <h3 id="1f724d30-c444-8047-9803-d476fe3282c3" class="">Why Crossword Jam?</h3>
+                <ul id="1f724d30-c444-8010-a6ff-e22d165a8e84" class="bulleted-list">
+                    <li><strong>Market Leadership Potential</strong>: Operating in the most popular mobile game genre with high Total Addressable Market (TAM)</li>
+                </ul>
+                <ul id="1f724d30-c444-8030-a83a-c1511f934f07" class="bulleted-list">
+                    <li><strong>Strong Foundation</strong>: Top-charting product by PlaySimple Games with proven growth through localization</li>
+                </ul>
+                <ul id="1f724d30-c444-8003-8bbc-fd07f38de015" class="bulleted-list">
+                    <li><strong>Growth Opportunity</strong>: Significant scope to increase market share against competitors like Wordscapes and Word of Wonders</li>
+                </ul>
+                <hr id="1f724d30-c444-80e7-a003-fc1368b4af2d"/>
+                <h2 id="1f724d30-c444-802c-94e1-e9dce2d97f76" class="">Current Market Position</h2>
+                <h3 id="1f724d30-c444-8039-88a3-ccf212f88117" class="">Key User Demographics</h3>
+                <ul id="1f724d30-c444-805f-b430-fd79db0d362f" class="bulleted-list">
+                    <li><strong>80% female user base</strong> - predominantly casual players</li>
+                </ul>
+                <ul id="1f724d30-c444-8001-82e7-eb4c4773ef82" class="bulleted-list">
+                    <li><strong>Revenue Split</strong>: 70% advertising revenue, 30% in-app purchases</li>
+                </ul>
+                <ul id="1f724d30-c444-80f3-b351-db917954b454" class="bulleted-list">
+                    <li><strong>Recent Growth Driver</strong>: Successful localization initiatives</li>
+                </ul>
+                <ul id="1f724d30-c444-8082-856e-f25bafb21e90" class="bulleted-list">
+                    <li>Primary competitors include <strong>Wordscapes and Word of Wonders</strong></li>
+                </ul>
+                <figure class="image">
+                    <a href="images/Screenshot_2025-05-16 at 6.54.48 PM.png">
+                        <img style="width:360px" src="images/Screenshot_2025-05-16 at 6.54.48 PM.png"/>
+                    </a>
+                    <figcaption class="image-caption">Market share comparison of Crossword Jam and its primary competitors.</figcaption>
+                </figure>
+                <p id="1f724d30-c444-80ec-92d4-c7a4005ffca8" class="">
+                </p>
+                <h2 id="1f724d30-c444-809e-8325-d176775db496" class="">Strategic Framework</h2>
+                <p id="1f724d30-c444-80cc-96f3-d41bbe5af0f6" class="">Each strategic pillar includes initiatives categorized by implementation timeline:</p>
+                <ul id="1f724d30-c444-80ed-8063-c1a7cfbd2afe" class="bulleted-list">
+                    <li><strong>Quick Wins</strong> (0-3 months): Immediate impact, low complexity</li>
+                </ul>
+                <ul id="1f724d30-c444-8031-a546-d425c904af87" class="bulleted-list">
+                    <li><strong>Mid-Term</strong> (4-6 months): Moderate investment, significant impact</li>
+                </ul>
+                <ul id="1f724d30-c444-80ab-86ae-e5146acd3233" class="bulleted-list">
+                    <li><strong>Long-Term</strong> (7-12 months): Strategic investments for sustainable growth</li>
+                </ul>
+                <p id="1f724d30-c444-8092-8d6d-e208dc273e13" class="">
+                </p>
+                <h3 id="1f724d30-c444-8061-b5e7-fbac937c04a3" class=""><mark class="highlight-yellow_background">Expand each section to see details</mark></h3>
+                <details>
+                    <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Acquisition Strategy</summary>
+                    <div class="quick-term">
+                        <figure class="block-color-gray_background callout" id="acquisition-key-pain-points">
+                            <div class="callout-content">
+                                <div class="callout-header">
+                                    <span class="icon">💡</span>
+                                    <h3><span style="border-bottom:0.05em solid">Key Pain Points & Opportunities</span></h3>
+                                </div>
+                                <ul class="bulleted-list">
+                                    <li><strong>Lack of Playable Ads:</strong> Competitors use playable ads for up to <strong>20x higher conversions</strong>. Crossword Jam mainly uses static/video ads.</li>
+                                    <li><strong>Cross-Promotion Underutilized:</strong> Minimal cross-app promotion, even among PSG's own games.</li>
+                                    <li><strong>Localization Scope:</strong> Supports 28 languages vs. WoW's 35.</li>
+                                    <li><strong>ASO & Store Presence:</strong> App visuals and preview video lack vibrancy expected in games.</li>
+                                    <li><strong>Referral Channels:</strong> Weak push for referrals despite proven success in mobile gaming.</li>
+                                </ul>
+                            </div>
+                        </figure>
+                        <h3 id="1f724d30-c444-80b3-9fa1-e747522d434d" class="">Success Metrics (KPIs)</h3>
+                        <ul id="1f724d30-c444-80a0-9792-d1f0c8cf4a81" class="bulleted-list">
+                            <li><strong>Primary</strong>: Return on Ad Spend (ROAS)</li>
+                        </ul>
+                        <ul id="1f724d30-c444-8024-b1ed-ee9a88f6a2ed" class="bulleted-list">
+                            <li><strong>Secondary</strong>: Day-7 (D7) and Day-30 (D30) retention</li>
+                        </ul>
+                        <p id="1f724d30-c444-8043-b906-d1fb0c53b171" class="">
+                        </p>
+                        <h3 id="1f724d30-c444-80df-a0fe-fade77549c59" class="">Quick Wins (0–3 Months)</h3>
+                        <p id="1f724d30-c444-804d-906c-c865500b7134" class=""><strong><span style="border-bottom:0.05em solid">App Store Optimization (ASO) Enhancement</span></strong></p>
+                        <ul id="1f724d30-c444-806f-861e-c756f3acf331" class="bulleted-list">
+                            <li><strong>Pain Point</strong>: Low app rating and a plain white preview video that gives an academic feel rather than game-like feel.</li>
+                        </ul>
+                        <ul id="1f724d30-c444-80c5-9d15-f5970b48ecae" class="bulleted-list">
+                            <li><strong>Actions:</strong> Upgrade store visuals to highlight vibrant gameplay, optimize top user reviews emphasizing key benefits such as brain training, vocabulary building and enjoyable gameplay.</li>
+                        </ul>
+                        <ul id="1f724d30-c444-803c-9568-ee852b9f3230" class="bulleted-list">
+                            <li><strong>Priority</strong>: ✅ High<figure id="1f724d30-c444-8057-bbf6-fd25e0be83c2" class="image">
+                                    <a href="images/Screenshot_2025-05-18_at_4.17.01_PM.png"><img style="width:288px" src="images/Screenshot_2025-05-18_at_4.17.01_PM.png"/></a>
+                                </figure>
+                                <figure id="1f724d30-c444-8043-af3b-d095bd3b21da" class="image">
+                                    <a href="images/Screenshot_2025-05-18_at_4.16.40_PM.png"><img style="width:288px" src="images/Screenshot_2025-05-18_at_4.16.40_PM.png"/></a>
+                                </figure>
+                            </li>
+                        </ul>
+                        <p id="1f724d30-c444-801f-bc38-faaae1ddf433" class="">
+                        </p>
+                        <hr id="1f724d30-c444-8091-a400-d52ea2f54135"/>
+                        <p id="1f724d30-c444-8064-a529-fb84af5a7ca2" class=""><strong><br/><br/></strong><strong><span style="border-bottom:0.05em solid">Playable Ads Implementation both for Acquisition & Cross Platform Promotion</span></strong></p>
+                        <ul id="1f724d30-c444-80bb-9ca8-cdd56f33e97e" class="bulleted-list">
+                            <li><strong>Status Quo</strong> - If we are using Playable Ads already, understand how the conversion metric are compared to other ads across channels, geographies & creatives to decide if & where to start</li>
+                        </ul>
+                        <ul id="1f724d30-c444-8097-af9a-eb5a18e5e506" class="bulleted-list">
+                            <li><strong>Pain Point</strong>: Wordscapes effectively use interactive playable ads that offer much better experience and upto <a href="https://www.applovin.com/blog/what-is-a-playable-ad/">20X higher conversion</a>.  These ads also attract higher-quality, high-intent users. Crossword Jam lacks such ads — most observed were static banner or videos ads on Facebook.<figure id="1f724d30-c444-802d-a639-eb1b97ec2da2" class="image">
+                                    <a href="images/Screenshot_2025-05-18_at_4.19.10_PM.png"><img style="width:654.0104370117188px" src="images/Screenshot_2025-05-18_at_4.19.10_PM.png"/></a>
+                                </figure></li>
+                        </ul>
+                        <ul id="1f724d30-c444-809b-b1ec-ee99f6a4676d" class="bulleted-list">
+                            <li><strong>Actions</strong>:<ul id="1f724d30-c444-801a-bfab-df6cc24aad8a" class="bulleted-list">
+                                    <li>Create interactive playable ads showcasing core gameplay.</li>
+                                </ul>
+                                <ul id="1f724d30-c444-805f-b27c-cfae29bdc12d" class="bulleted-list">
+                                    <li>Deploy across in-app cross-promotion slots, Facebook and other relevant channels.</li>
+                                </ul>
+                                <ul id="1f724d30-c444-8087-9d28-c685826b8b79" class="bulleted-list">
+                                    <li><strong>User Interactive Playable ads of other titles like Word Search, Word trip within Crossword Jam to boost growth. Right now I see minimal cross promotion</strong></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-80b4-91eb-d415d24f2bde" class="bulleted-list">
+                            <li><strong>Priority</strong>: ✅ Extremely High</li>
+                        </ul>
+                        <hr id="1f724d30-c444-809a-b2ad-d2a704078f4d"/>
+                        <h3 id="1f724d30-c444-8075-9cfa-d94b3e3bba8f" class="">Mid-Term (4–6 Months)</h3>
+                        <p id="1f724d30-c444-8077-9feb-e1d196e9e15b" class=""><strong><span style="border-bottom:0.05em solid">Market Expansion Through Localization</span></strong></p>
+                        <ul id="1f724d30-c444-80c2-afce-fe9128bcf1c6" class="bulleted-list">
+                            <li><strong>Actions</strong>: Analyse & Improve current onboarding & retention funnels across key languages. Accelerate growth in high-potential and emerging markets through deeper localization.</li>
+                        </ul>
+                        <ul id="1f724d30-c444-80a2-ab44-dfda9008d38e" class="bulleted-list">
+                            <li>Expand app language support beyond the current 28 to unlock new regions. <strong>WoW has 35 languages. Gen AI can really boost localisation quality & speed  </strong></li>
+                        </ul>
+                        <ul id="1f724d30-c444-80bc-812c-e679113cb607" class="bulleted-list">
+                            <li><strong>Priority</strong>: ✅ High</li>
+                        </ul>
+                        <hr id="1f724d30-c444-80ec-8e68-f2c03c4e721d"/>
+                        <p id="1f724d30-c444-802d-b724-dcd4579933ba" class=""><strong><span style="border-bottom:0.05em solid">Optimize Ad Frequency and Timing to Improve Onboarding</span></strong></p>
+                        <ul id="1f724d30-c444-8042-bc5d-cf9610b8a560" class="bulleted-list">
+                            <li><strong>Pain Point</strong>: Interstitial ads are shown too early in the user journey. Wordscapes delays ad initiation, potentially leading to better retention. Early ads may be causing drop-offs and negatively impacting D7/D30 metrics.</li>
+                        </ul>
+                        <ul id="1f724d30-c444-80cd-ac7d-ea8b90c122cf" class="bulleted-list">
+                            <li><strong>Actions</strong>:<ul id="1f724d30-c444-80b0-b56b-d001e17886f7" class="bulleted-list">
+                                    <li>Enhance the ML model to intelligently determine the optimal timing and frequency for ad delivery, balancing monetization with user experience.</li>
+                                </ul>
+                                <ul id="1f724d30-c444-8009-a538-e92267ad1143" class="bulleted-list">
+                                    <li>Benchmark with Wordscapes and similar top-performing games to refine ad logic and boost LTV.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-80f7-aa9f-f00498660251" class="bulleted-list">
+                            <li><strong>Priority</strong>: ✅ High</li>
+                        </ul>
+                        <hr id="1f724d30-c444-8020-b090-f3907163655a"/>
+                        <h3 id="1f724d30-c444-808d-b90e-c4906dd8ba4c" class="">Long-Term (7–12 Months)</h3>
+                        <p id="1f724d30-c444-80b8-a763-d2016f328271" class=""><strong><span style="border-bottom:0.05em solid">Enhanced Referral Program</span></strong></p>
+                        <ul id="1f724d30-c444-80c5-a6fd-d5f2e4991991" class="bulleted-list">
+                            <li><strong>Opportunity</strong>: 45% of female users discover games via referrals or word-of-mouth, an underutilized channel for Crossword Jam.</li>
+                        </ul>
+                        <ul id="1f724d30-c444-8006-b024-c8b9b5e6dca3" class="bulleted-list">
+                            <li><strong>Actions</strong>:<ul id="1f724d30-c444-8046-9e57-d2dca4514223" class="bulleted-list">
+                                    <li>Make In-App Referrals really prominent &amp; awards really appealing</li>
+                                </ul>
+                                <ul id="1f724d30-c444-80ad-a85e-ffede068ad2e" class="bulleted-list">
+                                    <li>Introduce &quot;challenge a friend&quot; features to make referrals more interactive and incentivized.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-80bd-97a7-c920f90ae1c6" class="bulleted-list">
+                            <li><strong>Priority</strong>: ⚪ Medium</li>
+                        </ul>
+                        <hr id="1f724d30-c444-8013-a174-d8e43be39c38"/>
+                    </div>
+                </details>
+                <details>
+                    <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Retention Strategy (Engagement & Player Retention)</summary>
+                    <div class="mid-term">
+                        <figure class="block-color-gray_background callout" id="retention-key-pain-points">
+                            <div class="callout-content">
+                                <div class="callout-header">
+                                    <span class="icon">💡</span>
+                                    <h3><span style="border-bottom:0.05em solid">Key Pain Points & Opportunities</span></h3>
+                                </div>
+                                <ul class="bulleted-list">
+                                    <li><strong>Ad Placement Issues:</strong> Early interstitials hurt retention. Competitors delay these ads.</li>
+                                    <li><strong>Gameplay Bugs:</strong> Issues like invalid word recognition and app freezes impact trust.</li>
+                                    <li><strong>LiveOps Underdeveloped:</strong> Lacks time-limited events and dynamic content drops.</li>
+                                    <li><strong>Repetitive Gameplay:</strong> Power users report lack of content variety at higher levels.</li>
+                                </ul>
+                            </div>
+                        </figure>
+                        <hr id="1f724d30-c444-80f6-949f-f42de95d6bdd"/>
+                        <h3 id="1f724d30-c444-8029-85e7-db52c11753ae" class="">Key Performance Indicators</h3>
+                        <ul id="1f724d30-c444-8034-a12e-e5e905d513a2" class="bulleted-list">
+                            <li><strong>New Users</strong>:<ul id="1f724d30-c444-80db-b96b-e720c75eb40e" class="bulleted-list">
+                                    <li>D1 Retention: &gt;35%</li>
+                                </ul>
+                                <ul id="1f724d30-c444-805a-ba33-c9b204099be2" class="bulleted-list">
+                                    <li>D7 Retention: 30%</li>
+                                </ul>
+                                <ul id="1f724d30-c444-80cb-a041-e1e21be232b8" class="bulleted-list">
+                                    <li>D30 Retention: 20–25%</li>
+                                </ul>
+                                <ul id="1f724d30-c444-804f-a089-e87ba3ab08e2" class="bulleted-list">
+                                    <li>Avg. Session Length</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-8017-a22e-e0e183bcab81" class="bulleted-list">
+                            <li><strong>Power Users</strong>:<ul id="1f724d30-c444-80b4-aa1c-d62ae0d3f9fa" class="bulleted-list">
+                                    <li>M3, M6, M12 Retention</li>
+                                </ul>
+                                <ul id="1f724d30-c444-8037-b97d-eac6810784a7" class="bulleted-list">
+                                    <li>Avg. Session Length</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <hr id="1f724d30-c444-8015-b0f2-f0860c191ff8"/>
+                        <h3 id="1f724d30-c444-80f9-a001-d0eac298773e" class="">Quick Wins (0–3 Months)</h3>
+                        <p id="1f724d30-c444-80fc-8938-f434bb34c03f" class=""><strong><span style="border-bottom:0.05em solid">Ad Frequency Optimization</span></strong></p>
+                        <ul id="1f724d30-c444-80cc-b4d7-dc983f45544f" class="bulleted-list">
+                            <li><strong>Pain Point</strong>: Early interstitials are causing friction. Wordscapes delays interstitials to protect early user experience.</li>
+                        </ul>
+                        <ul id="1f724d30-c444-8097-af3d-eb92732e5c78" class="bulleted-list">
+                            <li><strong>Actions</strong>:<ul id="1f724d30-c444-80a0-8f7a-fb0536a34c28" class="bulleted-list">
+                                    <li>Limit early sessions to rewarded videos and non-intrusive banners.</li>
+                                </ul>
+                                <ul id="1f724d30-c444-80d8-a1b3-c8f6afb3feac" class="bulleted-list">
+                                    <li>Train ML models to personalize ad initiation, frequency and format per user, geography, and behavior to maximise LTV</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-80b2-abae-c338e975315d" class="bulleted-list">
+                            <li><strong>Priority</strong>: ✅ High<br/><br/></li>
+                        </ul>
+                        <hr id="1f724d30-c444-8016-acb5-f827356b9008"/>
+                        <p id="1f724d30-c444-807d-afab-db93ef728f34" class=""><strong><span style="border-bottom:0.05em solid">Bug Resolution & Gameplay Fixes</span></strong></p>
+                        <ul id="1f724d30-c444-80da-83bf-c08eaa361436" class="bulleted-list">
+                            <li><strong>Pain Point</strong>: Frequent complaints around invalid word recognition and app crashes.</li>
+                        </ul>
+                        <ul id="1f724d30-c444-806b-a396-c2bf61cd84ef" class="bulleted-list">
+                            <li><strong>Actions</strong>:<ul id="1f724d30-c444-8091-9a44-e9a6ab503560" class="bulleted-list">
+                                    <li>Create a fast-track QA and bug resolution pipeline prioritizing retention-impacting bugs.</li>
+                                </ul>
+                                <ul id="1f724d30-c444-806b-955e-d933a9b62e43" class="bulleted-list">
+                                    <li>Monitor app reviews and crash analytics daily for top issues.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-805e-9005-c9afddd91377" class="bulleted-list">
+                            <li><strong>Priority</strong>: ✅ High</li>
+                        </ul>
+                        <hr id="1f724d30-c444-8080-8c87-eeca8c7d979e"/>
+                        <p id="1f724d30-c444-80ec-8e59-c16292e089ba" class=""><strong><span style="border-bottom:0.05em solid">Daily Streak Rewards</span></strong></p>
+                        <ul id="1f724d30-c444-8077-95ac-d058156120b6" class="bulleted-list">
+                            <li><strong>Opportunity</strong>: Build Day 1–7 retention through habit-forming reward loops.</li>
+                        </ul>
+                        <ul id="1f724d30-c444-8098-93e8-da5763be271a" class="bulleted-list">
+                            <li><strong>Actions</strong>:<ul id="1f724d30-c444-8005-941a-f698cb8c6a2d" class="bulleted-list">
+                                    <li>Surface streak rewards prominently on the home screen.</li>
+                                </ul>
+                                <ul id="1f724d30-c444-8040-aeea-fe78e1454c08" class="bulleted-list">
+                                    <li>Introduce &quot;7-day challenge&quot; with escalating rewards (e.g., ad-free day, bonus hints).</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-80a5-961a-c377e51f424c" class="bulleted-list">
+                            <li><strong>Priority</strong>:  ⚪ Medium</li>
+                        </ul>
+                        <hr id="1f724d30-c444-805c-b790-e877ed18951d"/>
+                        <h3 id="1f724d30-c444-8021-841e-ebf622ff1ddc" class="">Mid-Term &amp; Long Term (4–6 Months)</h3>
+                        <p id="1f724d30-c444-80ef-b40c-c57eb934f6de" class=""><strong><span style="border-bottom:0.05em solid">LiveOps Events & Tournaments</span></strong></p>
+                        <ul id="1f724d30-c444-808d-bfc3-ed2acab9896c" class="bulleted-list">
+                            <li><strong>Opportunity</strong>: Wordscape boosted its LTV by 40% using liveops &amp; continuously improving on it. It's significant money maker for them. Word of wonder also uses it pretty nicely, the UX is also good!<br/><br/><figure id="1f724d30-c444-8096-9bec-dd2bb5557983" class="image">
+                                    <a href="images/WhatsApp_Image_2025-05-18_at_17.45.57.jpeg"><img style="width:240px" src="images/WhatsApp_Image_2025-05-18_at_17.45.57.jpeg"/></a>
+                                </figure>
+                                <figure id="1f724d30-c444-8000-a7d3-c975c7c62c88" class="image">
+                                    <a href="images/WhatsApp_Image_2025-05-18_at_17.45.57_(1).jpeg"><img style="width:240px" src="images/WhatsApp_Image_2025-05-18_at_17.45.57_(1).jpeg"/></a>
+                                </figure>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-8015-97d5-c3f5faf9f4ba" class="bulleted-list">
+                            <li><strong>Actions</strong>:<ul id="1f724d30-c444-8020-8657-c115e1cbb412" class="bulleted-list">
+                                    <li>Launch daily/weekly/seasonal challenges: timed puzzles, leaderboard races, limited-time badges.</li>
+                                </ul>
+                                <ul id="1f724d30-c444-800f-a46a-cc509dd38324" class="bulleted-list">
+                                    <li>Test flash events, weekend-only tournaments.</li>
+                                </ul>
+                                <ul id="1f724d30-c444-8081-8d39-f1c605dd92c0" class="bulleted-list">
+                                    <li>Use calendar-based LiveOps planning to align with real-world moments (festivals, exams, holidays).</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-8065-9785-ded6c5609383" class="bulleted-list">
+                            <li><strong>Priority</strong>: ✅ High<br/><br/></li>
+                        </ul>
+                        <hr id="1f724d30-c444-80f9-b664-e1f1958a9708"/>
+                        <p id="1f724d30-c444-8058-a18b-cddf8af8d06e" class=""><strong><span style="border-bottom:0.05em solid">AI-Based Adaptive Long term Puzzle Progression</span></strong></p>
+                        <ul id="1f724d30-c444-80a0-9e89-fcec801ddcd0" class="bulleted-list">
+                            <li><strong>Objective</strong>: Common complain is that the apps becomes boring after a point</li>
+                        </ul>
+                        <ul id="1f724d30-c444-8003-b768-c011fec90c44" class="bulleted-list">
+                            <li><strong>Actions</strong>:<ul id="1f724d30-c444-80a9-9de3-e14d5fdd7a57" class="bulleted-list">
+                                    <li><strong>Quick Implementation by giving Manual Option (1-3Month) - </strong>We can give a manual control to users to adjust difficulty & see if the engagement & LTV improves for those users. The learnings from this can be fed to improve content progression for all users using AI/ML</li>
+                                </ul>
+                                <ul id="1f724d30-c444-8055-b20b-d4a8151a2971" class="bulleted-list">
+                                    <li><strong>Long Term - </strong>Use AI to adapt puzzle difficulty, themes, and content pacing personalised for each user</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-80de-8983-c740f97b8bf7" class="bulleted-list">
+                            <li><strong>Priority</strong>:  ⚪ Medium</li>
+                        </ul>
+                    </div>
+                </details>
+                <details>
+                    <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Monetization Strategy (Revenue Growth & Optimization)</summary>
+                    <div class="long-term">
+                        <figure class="block-color-gray_background callout" id="monetization-key-pain-points">
+                            <div class="callout-content">
+                                <div class="callout-header">
+                                    <span class="icon">💡</span>
+                                    <h3><span style="border-bottom:0.05em solid">Key Pain Points & Opportunities</span></h3>
+                                </div>
+                                <ul class="bulleted-list">
+                                    <li><strong>Ad Fatigue:</strong> Overexposure to interstitials degrades user experience and retention.</li>
+                                    <li><strong>Micro-Ad Bundles:</strong> No affordable short-term ad-free options for new users.</li>
+                                    <li><strong>Rewarded Video Experience:</strong> Could be surfaced better and more frequently.</li>
+                                </ul>
+                                <figure class="image">
+                                    <a href="images/Screenshot_2025-05-18_at_5.20.59_PM.png">
+                                        <img style="width:336px" src="images/Screenshot_2025-05-18_at_5.20.59_PM.png"/>
+                                    </a>
+                                    <figcaption class="image-caption">Example: Casino-style spin wheel for rewarded ads can boost engagement.</figcaption>
+                                </figure>
+                                <ul class="bulleted-list">
+                                    <li><strong>Event-Based Monetization:</strong> Underutilized compared to competitors.</li>
+                                    <li><strong>Personalization:</strong> No user-segmented pricing or dynamic discounts.</li>
+                                </ul>
+                            </div>
+                        </figure>
+                        <h3 id="1f724d30-c444-8030-81a4-dab2be9f30e2" class="">Key Performance Indicators</h3>
+                        <ul id="1f724d30-c444-8075-b880-cef2c348c1d4" class="bulleted-list">
+                            <li><strong>Primary</strong>:<ul id="1f724d30-c444-806d-851e-de76f065f060" class="bulleted-list">
+                                    <li>ARPDAU (Average Revenue Per Daily Active User)</li>
+                                </ul>
+                                <ul id="1f724d30-c444-8081-babf-d9b9b176f728" class="bulleted-list">
+                                    <li>Conversion Rate: Free → Paid (overall and by user segment)</li>
+                                </ul>
+                                <ul id="1f724d30-c444-8097-aad2-d7429b45da50" class="bulleted-list">
+                                    <li>Average Revenue Per Paying User (ARPPU)</li>
+                                </ul>
+                                <ul id="1f724d30-c444-80ae-b523-e86a494da53c" class="bulleted-list">
+                                    <li>eCPM per ad format (Interstitial, Rewarded, Banner)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <hr id="1f724d30-c444-80bc-8f28-f64901aacce4"/>
+                        <h3 id="1f724d30-c444-802e-8365-e3c2ae3d4a2f" class="">Quick Wins (0–3 Months)</h3>
+                        <p id="1f724d30-c444-809d-be42-f7237043f860" class=""><strong><span style="border-bottom:0.05em solid">Ad Frequency & Format Optimization</span></strong></p>
+                        <ul id="1f724d30-c444-80d2-9656-eb790206d9f8" class="bulleted-list">
+                            <li><strong>Pain Point</strong>: Interstitials shown too frequently may frustrate users and reduce retention.</li>
+                        </ul>
+                        <ul id="1f724d30-c444-8067-abe8-c79763d2221e" class="bulleted-list">
+                            <li><strong>Actions</strong>:<ul id="1f724d30-c444-80e8-99f0-d8f663c7a548" class="bulleted-list">
+                                    <li>Audit and optimize interstitial ad frequency to maximise LTV. Shown too much too early can impact retention. </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-801f-87f1-cf1d6ccf1f7d" class="bulleted-list">
+                            <li><strong>Priority</strong>: ✅ High<br/><br/></li>
+                        </ul>
+                        <hr id="1f724d30-c444-8041-a22a-c2815c8a7f06"/>
+                        <p id="1f724d30-c444-80a4-87ba-d73acc3a32f2" class=""><strong><span style="border-bottom:0.05em solid">Rewarded Ad Experience Upgrade</span></strong></p>
+                        <ul id="1f724d30-c444-8093-9916-fab323a4dcce" class="bulleted-list">
+                            <li><strong>Pain Point</strong>: Rewarded ads are functional, appeal can be improved significantly.</li>
+                        </ul>
+                        <ul id="1f724d30-c444-80ca-871f-dfc280452192" class="bulleted-list">
+                            <li><strong>Actions</strong>:<ul id="1f724d30-c444-80ab-86d0-d848182b2e14" class="bulleted-list">
+                                    <li>Improve the visual presentation of rewarded ads with gift-like animations and surprise elements.<br/>PSF Rewarded Video Icon is not appeaing enough, the gift icon feels much more appealing <br/><figure id="1f724d30-c444-80b2-a64e-d49b74b96329" class="image">
+                                            <a href="images/Screenshot_2025-05-18_at_5.25.30_PM.png"><img style="width:240px" src="images/Screenshot_2025-05-18_at_5.25.30_PM.png"/></a>
+                                        </figure>
+                                        <figure id="1f724d30-c444-8014-8150-f762fb72dc96" class="image">
+                                            <a href="images/Screenshot_2025-05-18_at_5.25.22_PM.png"><img style="width:240px" src="images/Screenshot_2025-05-18_at_5.25.22_PM.png"/></a>
+                                        </figure>
+                                    </li>
+                                </ul>
+                                <ul id="1f724d30-c444-8052-9b41-f0fa1ec6e18a" class="bulleted-list">
+                                    <li>Add a casino style games like spin wheel where players always win something — encourages more rewarded ad views and perceived control. I watched 2-3 rewarded video ads just to try my luck & see how many coins I can win. You can offer mediums sized reward in first spin, which will hook users but now they would want to spin again in anticipation of winning an even larger reward, but they need to watch a video for that, but now they are in flow they dont mind watching because the hope is to win large even though they might not<figure id="1f724d30-c444-8015-9db8-dc222a69695d" class="image">
+                                    <li><strong>Priority</strong>: ✅ High<br/><br/></li>
+                                </ul>
+                                <p id="1f724d30-c444-8068-9dcd-cd1d4eec1c19" class=""><br/><br/></p>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-8056-9b3c-efce7e746af0" class="bulleted-list">
+                            <li><strong>Priority</strong>: ✅ High<br/><br/></li>
+                        </ul>
+                        <hr id="1f724d30-c444-80b9-939b-ddcbd6ad39fa"/>
+                        <p id="1f724d30-c444-80f1-b2f0-d5f3f6d103c6" class=""><strong><span style="border-bottom:0.05em solid">Launch Entry-Level Ad-Free Bundles</span></strong></p>
+                        <ul id="1f724d30-c444-8069-9ac0-cbddd6b5f987" class="bulleted-list">
+                            <li><strong>Pain Point</strong>: Rs 990 one-time ad-free pack may deter new users. Looks steep. Wordscape has Rs 250 Ad free bundle for 7 days</li>
+                        </ul>
+                        <ul id="1f724d30-c444-802d-9ea9-c9465effb563" class="bulleted-list">
+                            <li><strong>Actions</strong>:<ul id="1f724d30-c444-80d7-908e-e6b11d2a18df" class="bulleted-list">
+                                    <li>Introduce affordable short-term ad-free options (e.g., Rs 50 for 1-day, Rs 200 for 7-day).</li>
+                                </ul>
+                                <ul id="1f724d30-c444-80a3-adc3-df402fbd877a" class="bulleted-list">
+                                    <li>Use these as entry points to convert users into long-term buyers.</li>
+                                </ul>
+                                <ul id="1f724d30-c444-806e-980c-e8262fe584f8" class="bulleted-list">
+                                    <li><strong>Priority</strong>: ✅ High</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-80a6-844c-f329a1441476" class="bulleted-list">
+                            <li><strong>Priority</strong>: ✅ High</li>
+                        </ul>
+                        <hr id="1f724d30-c444-800b-813e-ee78fbaa0aea"/>
+                        <h3 id="1f724d30-c444-803f-8c3b-fbaeebced0c9" class="">Mid-Term (4–6 Months)</h3>
+                        <p id="1f724d30-c444-806e-89a2-e593974e2fff" class=""><strong>Dynamic Offers & Personalized Pricing</strong></p>
+                        <ul id="1f724d30-c444-80c8-92bd-d0815bd973bb" class="bulleted-list">
+                            <li><strong>Opportunity</strong>: Segmenting offers based on user behavior can significantly improve conversion and LTV.</li>
+                        </ul>
+                        <ul id="1f724d30-c444-80b0-b9ac-f6e297e1d102" class="bulleted-list">
+                            <li><strong>Actions</strong>:<ul id="1f724d30-c444-80f9-a83c-c024e4c4cfe0" class="bulleted-list">
+                                    <li>Offer discounts or time-limited bundles to new but engaged users.</li>
+                                </ul>
+                                <ul id="1f724d30-c444-809e-b22a-cf76bb586e11" class="bulleted-list">
+                                    <li>Introduce a dynamic offer system that adjusts pricing based on signals like time spent, puzzles solved, or previous purchase intent.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-8088-be0e-fb60b456a15d" class="bulleted-list">
+                            <li><strong>Priority</strong>:  ⚪  Medium<br/><br/></li>
+                        </ul>
+                        <p id="1f724d30-c444-8072-b08c-dfb2c6c03104" class=""><strong>Event-Based Monetization & Time Limited Offers</strong></p>
+                        <ul id="1f724d30-c444-8049-86c5-ef195bebd7cc" class="bulleted-list">
+                            <li><strong>Opportunity</strong>: Competitors successfully use FOMO and premium tiers to monetize time-limited events.<br/><br/><strong>Time Limited Offers</strong><figure id="1f724d30-c444-8029-a8f2-de5fd425a11f" class="image">
+                                    <a href="images/Screenshot_2025-05-18_at_5.21.31_PM.png"><img style="width:336px" src="images/Screenshot_2025-05-18_at_5.21.31_PM.png"/></a>
+                                </figure></li>
+                        </ul>
+                        <ul id="1f724d30-c444-800f-acca-fe7c4fd1bdce" class="bulleted-list">
+                            <li><strong>Actions</strong>:<ul id="1f724d30-c444-8035-aba8-e8527bd30894" class="bulleted-list">
+                                    <li>Launch tournaments, event passes for LiveOps events (~$4.99) that unlock premium rewards.</li>
+                                </ul>
+                                <ul id="1f724d30-c444-80ce-aa46-d3755d874161" class="bulleted-list">
+                                    <li>Add limited-use boosters (e.g., extra points, faster hints) during timed challenges.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-807f-8eb0-d32e1d877639" class="bulleted-list">
+                            <li><strong>Priority</strong>:  ⚪ Medium<br/><br/></li>
+                        </ul>
+                        <hr id="1f724d30-c444-8003-9e7b-f38b937a0a08"/>
+                        <h3 id="1f724d30-c444-80b9-b31c-eabcde11d99f" class="">Long-Term (7–12 Months)</h3>
+                        <p id="1f724d30-c444-8047-a92a-c0c6d45e4818" class="">
+                        </p>
+                        <p id="1f724d30-c444-80f9-a204-cc750c15adb3" class=""><strong>Player-Pooled Tournament Entries</strong></p>
+                        <ul id="1f724d30-c444-8087-a0af-dc0ef21a8704" class="bulleted-list">
+                            <li><strong>Opportunity</strong>: Word game users are increasingly open to light competition.</li>
+                        </ul>
+                        <ul id="1f724d30-c444-8016-9459-c87dfed1986b" class="bulleted-list">
+                            <li><strong>Actions</strong>:<ul id="1f724d30-c444-80cd-b21c-cfe8d7af5e6b" class="bulleted-list">
+                                    <li>Launch opt-in tournaments where users pay entry (via coins or IAP), and winners receive prize pools. Crossword Jam takes a cut.</li>
+                                </ul>
+                                <ul id="1f724d30-c444-80b1-ac7a-f453316ec42e" class="bulleted-list">
+                                    <li>Rotate weekly formats and show past winners to increase participation.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="1f724d30-c444-80df-add9-c3f6f4d11e42" class="bulleted-list">
+                            <li><strong>Priority</strong>:  ⚪ Medium<br/><br/></li>
+                        </ul>
+                        <p id="1f724d30-c444-80b3-bc70-d86ffcff7318" class=""><br/><br/></p>
+                        <p id="1f724d30-c444-8001-8a7a-fa71debc6dbc" class="">
+                        </p>
+                        <p id="1f724d30-c444-8033-8f33-c59cb562a35f" class="">
+                        </p>
+                    </div>
+                </details>
+            </div>
+        </article>
+        <span class="sans" style="font-size:14px;padding-top:2em"></span>
+    </div>
+</body>
+</html>
